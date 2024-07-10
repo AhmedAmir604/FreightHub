@@ -2,7 +2,7 @@
 
 import { Resend } from "resend";
 
-const resend = new Resend("re_QKBe37ve_CTtCuVX3xNMLi6WrPec4mFV6");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const formValidator = (content: unknown, maxLength: number): boolean => {
   return typeof content == "string" && content.length < maxLength;
