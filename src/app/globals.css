@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primaryColor: #f06728;
+}
+
+.some-element {
+  color: var(--primaryColor);
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+/* Apply the vibrating animation on group hover */
+.group:hover .group-hover\:vibrate {
+  animation: vibrate 0.2s ease infinite;
+}
+
+.custom-pagination-bullet {
+  height: 12.5px;
+  width: 12.5px;
+  background-color: white;
+  border: 2px solid black;
+  margin: 0 1rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+.custom-pagination-bullet:hover {
+  transition: all 250ms;
+  background: rgb(171, 170, 170);
+}
+
+.custom-pagination-bullet-active {
+  background-color: #f06728;
+  border: 0 solid black;
+}
+.custom-pagination-bullet-active:hover {
+  background: f06728;
+}
+
+@keyframes opacityA {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+
+.opacityA {
+  animation: opacityA 3s ease-out forwards;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+.zoom-in {
+  animation: zoom-in 3s linear forwards;
+}
+
+.zoom-out {
+  transform: scale(1.08);
+}
+
+@keyframes active-transition {
+  0% {
+    transform: translateX(0);
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px); /* Adjust this value based on your design */
+    scale: 1.5;
+    opacity: 1;
+  }
+}
+
+@keyframes active-transition2 {
+  0% {
+    transform: translateX(0px); /* Adjust this value based on your design */
+    scale: 1.5;
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+/*new starts here*/
+
+.dot {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.dot.visible {
+  opacity: 1;
+}
+
+.nav-btn-container {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: -10rem;
+}
+
+.nav-btn-number {
+  font-weight: bold;
+  transition: all 0.3s ease-linear;
+}
+
+.nav-dots-container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-dot {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.nav-dot-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
