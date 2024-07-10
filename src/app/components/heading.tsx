@@ -9,7 +9,7 @@ interface Props {
 export default function Heading({ imageIndex }: Props) {
   const activeImage = slideShowImages[imageIndex];
   return (
-    <div className="ml-[3rem] animate-slideInUp absolute inset-0 flex flex-col lg:items-start items-center  justify-center gap-[10px] text-center text-white">
+    <div className="md:ml-[3rem] animate-slideInUp absolute inset-0 flex flex-col lg:items-start items-center  justify-center gap-[10px] text-center text-white">
       <div className="lg:text-8xl text-6xl font-bold text-[var(--primaryColor)]">
         {activeImage.heading1}
       </div>

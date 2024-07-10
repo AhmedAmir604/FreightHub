@@ -21,7 +21,9 @@ export default function Bar() {
           alt="ShieldImg"
         ></Image>
         <div className="text-center lg:text-start lg:font-extrabold font-bold ">
-          <h1 className="text-4xl text-white">Delivering Confidence through</h1>
+          <h1 className="text-4xl text-white px-[1rem]">
+            Delivering Confidence through
+          </h1>
           <h1 className="font-extrabold text-4xl text-[#25224b]">
             Secure Logistics Solutions
           </h1>

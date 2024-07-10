@@ -52,6 +52,7 @@ export default function Hero() {
               objectFit="cover"
               className={`absolute inset-0 `}
               alt={`Slide ${index + 1}`}
+              unoptimized
             />
           </div>
           <Heading imageIndex={imageIndex} key={imageIndex} />

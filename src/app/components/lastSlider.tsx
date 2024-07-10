@@ -30,7 +30,8 @@ export default function LastSlider() {
             alt={`Image ${item.number}`}
             layout="fill"
             objectFit="cover"
-            className="w-full h-full"
+            className="w-[fit] h-[fit] "
+            unoptimized
           />
         </div>
       ))}
