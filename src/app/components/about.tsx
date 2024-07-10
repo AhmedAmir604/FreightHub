@@ -45,7 +45,7 @@ export default function About() {
       </div>
       <div className="lg:ml-20 ">
         <Image
-          src={"/images/aboutImg.jpg"}
+          src="/images/about.jpg"
           width={530}
           height={500}
           alt="About Image"
