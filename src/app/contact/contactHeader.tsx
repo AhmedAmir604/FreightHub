@@ -10,6 +10,7 @@ export default function ContactHeader() {
           layout="fill"
           objectFit="cover"
           alt="contactBgImg"
+          unoptimized
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>

@@ -19,7 +19,7 @@ export default function Heading({ imageIndex }: Props) {
       <div className="lg:text-8xl text-6xl font-bold">
         {activeImage.heading3}
       </div>
-      <div className="lg:text-lg text-md mt-[2rem]">
+      <div className="lg:text-lg text-md mt-[2rem] px-[6px]">
         {activeImage.description}
       </div>
       <div className="flex md:flex-row flex-col gap-[2rem] md:gap-[1rem] mt-[3rem] mb-[-2rem]">

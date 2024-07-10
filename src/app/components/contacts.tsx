@@ -5,7 +5,7 @@ import Form from "../contact/form";
 export default function Contacts() {
   return (
     <section className="flex flex-col items-center bg-white ">
-      <div className="flex flex-wrap justify-center gap-[10rem] mt-[10rem] mb-[10rem]">
+      <div className="flex flex-wrap justify-center md:gap-[10rem] gap-[5rem] mt-[5rem] mb-[5rem]">
         {contactInfo.map((item, index) => (
           <div key={index} className="flex flex-col gap-[1rem]">
             <div className="flex justify-center text-[var(--primaryColor)]">
